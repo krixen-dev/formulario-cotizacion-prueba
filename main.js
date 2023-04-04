@@ -29,14 +29,14 @@ var mostrar_servicio1 = document.getElementById("imprimir-servicio1");
 
 function next_paso(actual, proximo) {
     actual.style.display = "none"; //ACTUAL = contenedor que desaparece (ej: paso2)
-    proximo.style.display = "block";//ANTERIOR = contenedor que aparece (ej: paso3)
+    proximo.style.display = "block";//PROXIMO = contenedor que aparece (ej: paso3)
     //Esta función ADELANTA un paso y se utiliza solo para contenedores de formulario ("xxxx_PASO") 
 }
 
 function prev_paso(actual, anterior) {
     actual.style.display = "none";
     anterior.style.display = "block";
-    //VUELVE un paso al cont. de formulario
+    //VUELVE un paso atrás al cont. de formulario
 }
 
 function prev_boton(actual, anterior) {
@@ -48,24 +48,24 @@ function prev_boton(actual, anterior) {
 function next_boton(actual, proximo) {
     actual.style.display = "none"; 
     proximo.style.display = "flex";
-    //VUELVE un paso al cont. de botónes
+    //VUELVE un paso atrás al cont. de botónes
 }
 
 
 function mostrarSeleccion() {
     var checkboxes = document.getElementsByName("servicio");
-    var seleccionadas = [];
+    var seleccionadas = []; //array
     for (var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
             seleccionadas.push(checkboxes[i].value);
-            //por cada vuelta verifica si un checkbox es marcado y lo guarda
+            //por cada vuelta verifica si un checkbox es marcado, si es True lo guarda en el array
         }
     }
     mostrar_servicio1.textContent = seleccionadas.join(", "); //muestra en pantalla los servicios seleccionados
 }
 
 boton_next1.addEventListener("click", function (e) {
-    e.preventDefault();
+    e.preventDefault(); //La función preventDefault se usa para evitar el comportamiento por defecto del navegador
     next_paso(container_paso1, container_paso2);
     next_boton(container_btn1, container_btn2);
 })
