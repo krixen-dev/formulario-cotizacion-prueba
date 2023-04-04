@@ -1,0 +1,77 @@
+.seccion-cotizacion {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+.container-paso1 {
+}
+.container-botones {
+	width: 400px;
+	padding: 20px 20px;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(116, 116, 116);
+}
+.boton{
+	padding: 10px;
+	width: 48%;
+}
+
+
+
+.step1 span, .step2 span, .s{
+	color: rgb(253, 6, 88);
+}
+
+.container-paso1, .container-paso2, .container-paso3, .container-presupuesto{
+	width: 400px;
+	height: 350px;
+	padding: 20px 20px;
+	background-color: rgb(214, 214, 214);
+}
+
+label{
+	display: block;
+	margin-top: 20px;
+}
+
+input{
+	display: block;
+	padding: 10px;
+	width: 90%;
+}
+
+label, input{
+	margin: 0 10px;
+}
+
+.opciones{
+}
+.next1 {
+}
+.prev2 {
+}
+.next2 {
+}
+.prev3 {
+}
+.ver-presupuesto {
+}
+.container-paso2 {
+}
+.label-nombre {
+}
+.input-nombre {
+}
+.label-alias {
+}
+.input-alias {
+}
+.label-apellido {
+}
+.input-apellido {
+}
+.container-paso3 {
+}
+.label-telefono {
+}
