@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos-prueba.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<title>Pruebas1</title>
+</head>
+<body>
+	<header></header>
+	<main>
+		<section class="seccion-cotizacion">
+			<h2> Descargá el PDF con tu cotizacion siguiendo los pasos </h2>
+			<!--"la propiedad STYLE es para aplicar estilos desde HMTL(en este caso Display), pero se puede hacer normal desde CSS también"-->
+
+			<!--Los contenedores cumplen la función de acomodar los elementos automáticamente en cada camio de paso-->
+			<div id="container-paso1" class="container-paso1" style="display: block;">
+				<p>Seleccioná el plan para obtener el presupuesto</p>
+				<p class="step1">step <span>1</span>/3</p>
+			<select class="opciones" name="" id="">
+				<p>Elegir servicio</p>
+				<label><input type="checkbox" name="servicio" value="servicio1">servicio1</label><br>
+				<label><input type="checkbox" name="servicio" value="servicio2">servicio2</label><br>
+				<label><input type="checkbox" name="servicio" value="servicio3">servicio3</label><br>
+				<label><input type="checkbox" name="servicio" value="servicio4">servicio4</label><br>
+				<label><input type="checkbox" name="servicio" value="servicio5">servicio5</label><br>
+				<label><input type="checkbox" name="servicio" value="servicio6">servicio6</label><br>
+			</select>
+			</div>
+			
+			<div id="container-btn1" class="container-botones" style="display: flex;">	
+				<button id="btn-next1" class="boton next1">Siguiente</button>
+			</div>
+
+			<div id="container-paso2" class="container-paso2" style="display: none;">
+				<p>Datos Personales</p>
+				<p class="step2">step <span>2</span>/3</p>
+				<label class="label-nombre">Nombre</label>
+				<input class="input-nombre" id="nombre-input" type="text">
+				<label class="label-apellido">Apellido</label>
+				<input class="input-apellido" id="apellido-input" type="text">
+				<label class="label-alias">Alias(opcional)</label>
+				<input type="text" class="input-alias">
+			</div>
+			<div id="container-btn2" class="container-botones" style="display: none;">	
+				<button id="btn-prev2" class="boton prev2">Anterior</button>
+				<button id="btn-next2" class="boton next2">Siguiente</button>
+			</div>
+
+			<div id="container-paso3" class="container-paso3" style="display: none;">
+				<p>Dirección</p>
+				<p class="step3">step <span>3</span>/3</p>
+				<label class="label-nombre">Email</label>
+				<input type="email" name="" id="email-input">
+				<label class="label-telefono">Teléfono(opcional)</label>
+				<input type="tel" name="" id="">
+			</div>
+			<div id="container-btn3" class="container-botones" style="display: none;">	
+				<button id="btn-prev3" class="boton prev3">Anterior</button>
+				<button id="btn-presupuesto" class="boton ver-presupuesto">Ver presupuesto</button>
+			</div>
+
+			<div id="container-presupuesto" class="container-presupuesto" style="display: none;">
+				<p>Presupuesto</p>
+				<h2>Resumen de la información ingresada:</h2>
+				<p>Nombre: <span id="imprimir-nombre"></span></p>
+				<p>Apellido: <span id="imprimir-apellido"></span></p>
+				<p>Email: <span id="imprimir-email"></span></p>
+				<p>Servicio: <span id="imprimir-servicio1"></span></p>
+			</div>
+			<div id="container-btn-presupuesto" class="container-botones" style="display: none;">	
+				<button id="btn-prev4" class="boton prev4">Anterior</button>
+				<button id="btn-imprimir" class="boton imprimir">Imprimir</button>
+			</div>
+
+		</section>
+		
+
+
+
+			
+	</main>
+	<footer></footer>
+	<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
