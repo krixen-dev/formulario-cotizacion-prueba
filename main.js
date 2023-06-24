@@ -16,6 +16,7 @@ var boton_prev3 = document.getElementById("btn-prev3");
 var boton_prev4 = document.getElementById("btn-prev4");
 var boton_presupuesto = document.getElementById("btn-presupuesto");
 var boton_imprimir = document.getElementById("btn-imprimir");
+// test
 //se crea una variable por cada información que el usuario ingresa en los inputs
 var nombre_input = document.getElementById("nombre-input");
 var mostrar_nombre = document.getElementById("imprimir-nombre");
